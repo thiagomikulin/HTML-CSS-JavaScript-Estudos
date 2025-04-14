@@ -1,0 +1,27 @@
+.exemplo{
+    background: rgb(124, 124, 127);
+    color: rgb(0, 0, 0);
+    height:200px;
+    overflow: visible;
+}
+
+.exemplo2{
+    background: rgb(124, 124, 127);
+    color: rgb(0, 0, 0);
+    height:200px;
+    overflow: hidden;
+}
+
+.exemplo3{
+    background: rgb(124, 124, 127);
+    color: rgb(0, 0, 0);
+    height:200px;
+    overflow: scroll;
+}
+
+.exemplo4{
+    background: rgb(124, 124, 127);
+    color: rgb(0, 0, 0);
+    height:200px;
+    overflow: auto;
+}

@@ -1,0 +1,12 @@
+.pratica{
+    
+    background:green;
+    color:white;
+    padding:8px;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+.pratica:hover{
+    background:blue;
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<div class="praticas">
+    <a href="pasta-do-java/index.html" target="_blank">Práticas</a>
+</div>
+
+<body>
+    <h1>JAVASCRIPT</h1>
+    <h2>Aula 1</h2>
+    <p>Linguagem da programação usada para adicionar interatividade nos sites</p>
+    <ul>
+        <li>Ações quando botões são pressionados</li>
+        <li>Validações em formulários</li>
+        <li>mudanças dinâmicas na página</li>
+        <li>Animações</li>
+        <li>E mais</li>
+    </ul>
+    <p>Os arquivos são salvos como "arquivo.js"</p>
+    <p>JavaScript SEMPRE está atrelado ao HTML</p>
+    <p>JavaScript NÃO É Java</p>
+    <p>Existe JavaScript Interno e JavaScript Externo (que nem no CSS)</p>
+    <p>Geralmente, o JavaScript é colocado no final da página, antes do fechamento do body (não é que nem CSS que lê no
+        head) (renderizado por último para garantir que funções vão modificar o html que vem antes) (o + lento para
+        carregar e o último a ser lido)</p>
+    <p>Inserção de javascript externo: script src="fonte do js"</p>
+    <hr>
+    <!-- Aula 2 -->
+    <h2>Aula 2 - Tipos de saída do JavaScript</h2>
+    <p>Saída = maneira de exibir informação</p>
+    <ul>Tipos de saídas</ul>
+    <li>InnerHTML (alimentar o texto pro js) = document.getElementById("id do elemento").innerHTML="texto pretendido"
+    </li>
+    <li>alert(mensagem) = alerta em caixa separada</li>
+    <li>console.log("texto") = parecido com alerta, mas somente no console (F12 - Console)</li>
+    <li>document.write = document.write("texto") (suado mais com finalidade de teste)</li>
+
+    <p>No Javascript, a presença de maiúscula FAZ DIFERENÇA</p>
+    <p>Ideal sempre colocar ; no final do comando JS</p>
+    <hr>
+    <!-- Aula 3 -->
+    <h2>Aula 3 - Declarações</h2>
+    <p>Programa de computador = lista de instruções para o computador (instruções = declarações)</p>
+    <p>Antigamente, o JS só rodava em navegador; hoje, o "motor" do JS pôde ser extraído, o que deu origem ao NODE.JS
+    </p>
+    <p>JS = lista de declarações interpretada pelo computador</p>
+    <ul>Composição</ul>
+    <li>Valores</li>
+    <li>Operadores</li>
+    <li>Expressões</li>
+    <li>Funções</li>
+    <li>Comentários</li>
+    <li>etc.</li>
+    <p>Sintaxe de JS = a forma como o código deve ser escrito</p>
+    <p>Divisão entre declarações = ; (não é necessário, mas é recomendado [por organização e convenção para as outras
+        linguagens])</p>
+    <p>Espaço em branco não significa nada (escrever com espaço é igual escrever sem)</p>
+    <p>JS aceita quebra de linha (cuidado, algumas linguagens não permitem - mantenha o hábito de linha única)</p>
+    <p>function minhafuncao(){série de declarações JS}</p>
+    <p>Comandos</p>
+    <ul>
+        <li>Break</li>
+        <li>Continue</li>
+        <li>Debugger</li>
+        <li>do</li>
+        <li>for</li>
+        <li>function</li>
+        <li>if</li>
+        <li>Else</li>
+        <li>return</li>
+        <li>Twitch</li>
+        <li>try</li>
+        <li>catch</li>
+        <li>Var</li>
+        <li>let</li>
+        <li>Entre outros</li>
+    </ul>
+    <hr>
+    <!-- Aula 4 -->
+    <h2>Aula 4 - Sintaxes</h2>
+    <p>Toda linguagem de programação tem uma sintaxe</p>
+    <p>Podem haver diferentes conteúdos no JS (texto, número, decimais, etc.)</p>
+    <p>EX: console.log("texto por causa das aspas") & console.log(5+5 - número por não ter aspas)</p>
+    <p>Variáveis = armazenam valores de dados (var let const - AULA 6)</p>
+    <p>Também usa operadores aritiméticos (+, -, /, *, etc.)</p>
+    <p>Operadores de atribuição = atribuem valor à variável (sinal de = )</p>
+    <p>Java é sensível a maiúsculo e minúsculo (Case Sensitive) = vai ler aspectos com maiúscula como diferentes (EX:
+        Pessoa/PESSOA/pessoa são diferentes no JS) - regra inclui variáveis</p>
+    <p>NÃO SE USA HÍFEN NO JS (só pra subtração)</p>
+    <ul>Alternativas
+        <li>Camel Case no lugar (Capitalize)</li>
+        <li>Underline</li>
+    </ul>
+    <hr>
+    <!-- Aula 5 -->
+    <h2>Aula 5 - Comentários</h2>
+    <p>1 linha = // (a que pende pro lado direito/a do teclado numérico)(não precisa de fechamento)</p>
+    <p>+ de 1 linha = /* (começo) & */ (final)</p>
+    <hr>
+    <!-- Aula 6 -->
+    <h2>Aula 6 - Var, Let & Const</h2>
+    <p>Variáveis = "recipientes" para armazenar informações que podem variar (podem ter qualquer valor)</p>
+    <ul>3 palavras-chave para declarar variáveis
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+    </ul>
+    <p>As variáveis podem receber qualquer nome (tipo as classes do CSS) E recebem qualquer valor que você queira passar
+    </p>
+    <p>O JS lê as variáveis de acordo com as definições destas (se falar que dentro da var pote tem Bombom e der um
+        alert(pote), ele vai dizer "Bombom")</p>
+    <p>É mais simples definir as variáveis primeiro e depois, na linha de código, só repetir os valores sem repetir o
+        var para cada um indivivualmente (EX: var a,b,c [declaração de variáveis]; a=x; b=y; c=z;[atribuição de
+        valores])</p>
+    <p>Declaração de variável sempre vem indefinida (undefined)</p>
+    <p>Ordem de atribuição no código também importa (se colocar em uma linha acima que a=2 e em uma abaixo que a=3, o
+        a=3 será o validado [reatribuição de valor])</p>
+    <h3>Variáveis com letras</h3>
+    <p>Separadas com vírgulas</p>
+    <ul>
+        <li>Não pode começar com número</li>
+        <li>Não pode ter espaços entre um e outro (Camel Case ou Underline)</li>
+        <li>Não pode usar palavra-chave de uso do próprio JS</li>
+    </ul>
+    <p>Para colocar espaço, precisa ter (nome da var + " " + nome da outra var) (dá pra colocar no nome de alguma das
+        var também) </p>
+    <p>Concatenação de palavras (juntar várias variáveis em uma só)</p>
+    <p>Misturar palavras (strings) e números (numbers) pode complicar (ele entende os números como palavra)</p>
+    <h3>Diferença entre var, let e const</h3>
+    <ul>
+        <li>let (+ usado)</li>
+        <ul>
+            <li>torna variável única (não pode ser redeclarada - dá erro se tiver 2)</li>
+            <li>Pode ser isolado por <mark>escopo</mark> = {}</li>
+            <li>Pode ser alterado dentro dos escopos específicos</li>
+        </ul>
+        <li>var</li>
+        <ul>
+            <li>Pode ser redeclarada</li>
+            <li>Coringa universal para todo o código (funciona independente de onde esteja e NÃO É ISOLADO POR ESCOPO)
+            </li>
+        </ul>
+        <li>const = constante (não pode mudar NUNCA)</li>
+        <ul>
+            <li>O 1º valor vira o universal</li>
+            <li>Mesmo itens dentro de caixas (escopos) seguirão SEMPRE esse valor</li>
+        </ul>
+    </ul>
+    <hr>
+    <!-- Aula 7 -->
+    <h2>Aula 7 - Operadores</h2>
+    <p>Usados para:</p>
+    <ul>
+        <li>Atribuir valores</li>
+        <li>Comparar valores</li>
+        <li>Executar operações aritiméticas</li>
+        <li>etc.</li>
+    </ul>
+    <p>Operadores são os seguintes sinais: + - * / = ++ -- += -= && || etc...</p>
+    <p>Separados em 6 categorias:</p>
+    <ol>
+        <li>Operadores Aritiméticos (matemáticos)</li>
+        <ul>
+            <li>+</li>
+            <li>-</li>
+            <li>*</li>
+            <li>/</li>
+            <li>++ (incremento = acrescenta 1)</li>
+            <li>-- (decremento = tira 1)</li>
+        </ul>
+        <li>Operadores de Atribuição</li>
+        <ul>
+            <li>=</li>
+            <li>+= (usada quando quer somar um valor1 com um valor2 E que o resultado depois seja o novo valor1 [valor1
+                = valor1 + valor2])</li>
+            <li>-= (igual ao +=, mas pra subtração)</li>
+            <li>/= (igual ao +=, mas para divisão)</li>
+            <li>*= (igual ao +=, mas de multiplicação)</li>
+        </ul>
+        <li>Operadores de Sequência (TEXTO, pois só texto tem sequência)</li>
+        <ul>
+            <li>+</li>
+        </ul>
+        <li>Operadores de Comparação (usados em declaração lógica; respondem com verdadeiro ou falso)</li>
+        <ul>
+            <li>== -> total = (valor1 == valor2); ->valor1 é igual a valor2? (ignora o tipo - se é string ou number)
+            </li>
+            <li>=== ->Verifica se o valor E o tipo é o mesmo</li>
+            <li>!= ->ValorX é <mark>diferente</mark> de ValorY? (ignora o tipo)</li>
+            <li>!== (verifica diferença de valor E tipo)</li>
+            <li>
+                < :menor que (valor1 é menor que X?)</li>
+            <li>> :maior que (valor1 é maior que X?)</li>
+            <li>>= :maior ou igual (valor1 é menor ou igual que X?)</li>
+            <li>
+                <= :menor ou igual (valor1 é maior ou igual que X?)</li>
+        </ul>
+        <li>Operador Condicional (Ternário) (condição para variável)</li>
+        <ul>
+            <li>EX: var idade, eleitor; idade = 17; eleitor = (idade < 18)[condição] ? "Não, Eleitor [texto para resposta verdadeira] : Sim, eleitor [texto para resposta falsa];</li>
+            
+        </ul>
+        <li>Operadores Lógicos</li>
+        <ul>
+            <li>&& = confirma se um valor é uma coisa E outra [dentro de um limite] (EX: idade > 60 E idade < 70) [se não for, marca false, se for, marca verdadeira]</li> 
+            <li>|| = OU [Dá veradeiro se o valor pedido for uma coisa OU outra] (EX: idade === 65 || idade === 72) [se for algum desses 2, é true]</li>
+            <li>! = vai antes do parênteses para indicar que o valor NÃO pode ser o de dentro do parênteses {EX: resultado = !(idade == 65) -> O resultado será FALSE se a idade por 65}</li>
+        </ul>
+    </ol>
+    <hr>
+    <!-- Aula 8 -->
+    <h2>Aula 8 - Funções</h2>
+    <p>Código projetado para executar tarefa específica (você coloca uma entrada e ele te dá uma saída [como em uma fábrica]) </p>
+    <p>" Mini-programas" para fazer uma tarefa</p>
+    <p>É executada quando "algo" a invoca</p>
+    <p>COMO ESCREVER: function nome da função(valores de entrada [valor1, valor2]){return valor1 + valor2;}bloco de código [o que acontece]</p>
+    <p>Para invocar: no lugar de colocar o nome da função, colocar em seguida os parênteses com os valores determinados [EX: soma(10,10)</p>        
+    <p>Encurta o processo de escrever o código (função determinada evita ter que escrever as operações toda vez)</p>    
+    <h3>Invocando uma função</h3>
+    <p>onclick="função invocada" = quando clicar, a função será executada</p>
+    <p>Escrever só o nome da função também a invoca</p>
+    <p>ATENÇÃO: Se uma var estiver dentro de uma função, ela só funciona daquela forma dentro DESSA função (mas pode ser alterada DENTRO da função)</p> 
+    <hr>
+    <!-- Aula 9 -->
+    <h2>Aula 9 - Objetos</h2>
+    <p>Variáveis com muitos valores dentro</p>
+    <p>EX: const carro = {marca:"ford", modelo:"ka", ano:"2015"}</p>
+    <p>Propriedades = valores dentro de objetos</p>
+    <p>Objetos podem ter métodos(funções colocadas dentro de propriedade) (EX: carro.partida(); carro.acelerar(); carro.freiar())</p>
+    <p>Geralmente se usa const para objeto (não tem como mudar; conteúdo fechado)</p>
+    <p>Dá pra separa os objetos em linhas diferentes</p>
+    <ul>
+        <li>Objeto literal = quando determinamos suas propriedades</li>
+        <li>Existem objetos gerados de forma dinâmica</li>
+    </ul>
+    <p>Para pegar propriedades específicas, basta digitar (objeto.propriedade) ou (objeto["propriedade])</p>
+    <p>Se for se referir a uma propriedade dentro do objeto em uma função = this.propriedade</p>
+    <hr>
+    <!-- Aula 10 -->
+    <h2>Aula 10 - Eventos</h2>
+    <p>Ações disparadas pela interação do usuário na página (promove interatividade e dinâmica)</p>
+    <p>Eventos + utilizados</p>
+    <ul>
+        <li>onclick = disparado em click</li>
+        <li>ondblclick = disparado em double click</li>
+        <li>onmouseover = disparado quando o mouse passa sobre</li>
+        <li>onmouseout = disparado quando o mouse sai do elemento</li>
+        <li>onmousemove = disparado quando mouse se mexe</li>
+        <ul>
+            <li>Bem sensível, cuidado!</li>
+        </ul>
+        <li>onmouseup = disparado quando clique do botão é liberado</li>
+        <li>onmousedown = disparado quando clique do botão for pressionado</li>
+        <li>onfocus = disparado quando o elemento está no foco</li>
+        <ul>
+            <li>Focus = quando a tela está selecionada (EX: textbox piscando)</li>
+        </ul>
+        <li>onchange = disparado quando tem mudança no conteúdo</li>
+        <li>onblur = disparado quando elemento perde o foco</li>
+        <li>onkeydown = disparado quando tecla é pressionada</li>
+        <li>onkeypress = dispadado quando tecla é pressionada e solta</li>
+        <li>onkeyup = disparado quando tecla é solta SOBRE elemento</li>
+        <li>onload = disparado quando página acaba de carregar</li>
+        <ul>
+            <li>Bom para páginas muito pesadas (pode pedir para algo aparecer depois de carregar)</li>
+        </ul>
+        <li>onresize = disparado quando há redimensionamento de janela</li>
+    </ul>
+    <p>Para conectar div e function - var nome do elemento = document.getElementById("id do elemento").resto da function</p>
+    <p>append = adicionar</p>
+    <p>Value = valor dentro do elemento (pode retornar pelo JS)</p>
+    <p>Limpar texto - especifica o campo (por ID ou o que for) e coloca .value = ""; (vazio)</p>
+    <hr>
+    <!-- Aula 11 -->
+    <h2>Aula 11 - Arrays (Matrizes)</h2>
+    <p>Usados para armazenar vários valores em uma única variável</p>
+    <p>Diferentes de objetos pois o item dos Arrays é encontrado por posição (de 0 em diante) (não por nome)</p>
+    <img src="imagens/arrays.jpg">
+    <p>Em Matrizes, usamos colchetes []</p>
+    <p>Dá pra criar um "mini banco de dados" em uma única variável</p>
+    <p>SEMPRE COMEÇA EM 0</p>
+    <ul>
+        <li>Lista com todos os itens = array literal</p>
+        <li>Lista vazia com valores atribuídos fora também funciona</p>
+        <li>lista = new Array("item1", "item2", etc.)</p>
+    </ul>
+    <br>
+    <ul>
+        <li>Cada item precisa ter aspas próprias (senão não divide)</li>
+        <li>Para mudar item: nomeDaLista[valor] = "Novo nome";</li>
+        <li>para ver todos os itens = console.log(nomeDoArray)</li>
+        <li>verificar quantia de itens = nomeDaLista.length</li>
+        <li>Pegar último item = nomeDaLista.length -1 (ordem reversa - de trás pra frente)</li>
+        <li>Acrescentar item em tempo real = nomeDaLista.push("nome do novo item") OU: nomeDaLista[nomeDaLista.length] = "Novo item"</li>
+        <li>Se não tiver, dá undefined</li>
+        <li>Verificar se variável é matriz: Array.isArray(x)</li>
+    </ul>
+    <hr>
+    <!-- Aula 12 -->
+    <h2>Aula 12 - Métodos para Arrays</h2>
+    <p>Métodos</p>
+    <ul>
+        <li>join = troca separador entre itens (nomeDaVar.join(" símbolo "))</li>
+        <li>pop = remove último item da matriz (nomeDaVar.pop())</li>
+        <li>push = adiciona item no final (nomeDaVar.push ("item novo")) </li>
+        <li>shift = remove primeiro item da lista (nomeDaVar.shift())</li>
+        <li>unshift = adiciona item no começo (nomeDaVar.unshift("Novo Nome"))</li>
+        <li>delete = deleta item selecionado (delete nomeDaVar[0]) (não muda a ordem - mantém 0 inicial, mas ele vira undefined)</li>
+        <li>splice = múltiplos valores a uma posição (nomeDaVar.splice(posiçãoDoNovoElemento,quantosElementosSerãoRemovidos, "valoresAdicionados"))</li>
+        <li>concat = juntar Arrays (var nomeDaFusão = Array1.concat(Array2, Array3,...))</li>
+        <li>slice = cortar parte dos Arrays (var NomeDoArrayCortador = ArrayCortado.slice(posiçãoAPartirDaQualCorta, posiçãoLimiteDaSeleção [não-inclusa, só os atrás dela] - sempre do 0 em diante e os elementos no meio vão pro novo Array))</li>
+        <li>sort = Ordena em ordem alfabética (var nomeDaVarOrdenada = varASerOrdenada.sort());</li>
+        <ul>
+            <li>Para ordenar números = varDosNúmeros.sort(function(a,b){return a-b})</li>
+        </ul>
+        <li>reverse = inverte ordem alfabética (primeiro coloca sort, depois coloca nomeDaVarASerOrdenada.reverse)</li>
+        <ul>
+            <li>Para inverter números = varDosNúmeros.sort(function(a,b){return b-a})</li>
+        </ul>
+        <li>Maior número em Array = function títuloDaFunção(array) {return Math.max.apply(null, array)}; na invocação, coloca títuloDaFunção(nomeDaVarDosNúmeros)</li>
+        <li>Menor número em Array = function títuloDaFunção(array) {return.Math.min.apply(null, array)} </li>
+        <li>Filtragem de números = var nomeDaVar = varDosNúmeros.filter(funçãoFiltragem); function funçãoFiltragem(value, index, array){return value operador númeroComparativo;}</li>
+    </ul>
+    <hr>
+    <!-- Aula 13 -->
+    <h2>Aula 13 - If e Else</h2>
+    <p>If = se; Else = Senão</p>
+    <img src="imagens/if-e-else.jpg">
+    <p>else if = condição meio-termo entre if e else (3ª condicional)</p>
+    <p>Na prática:</p>
+    <ul>
+        <li>Validação de formulário: function verificar(){let nomeDaVar = document.getElementById("ID").value; if(nomeDaVar==" "|| nomeDaVar==null){Bloqueio de validação}else{validado}}</li>
+    </ul>
+    <hr>
+    <!-- Aula 14 -->
+    <h2>Aula 14 - Switch</h2>
+    <p>Usado para realizar diferentes ações com base em diferentes condições no mesmo bloco de verificação</p>
+    <p>Um "if/else" mais abrangente</p>
+    <p>switch (expressao){case a: o que acontece break; case b: o que acontece break; case c: o que acontece break; default: o que acontece}</p>
+    <p>Vale pelo operador === de tipo TAMBÉM (bem literal) (diferente do if com ==)</p>
+    <ul>
+        <li>Conversão de maiúscula para leitura em minúscula pelo código:expressao = expressao.toLowerCase</li>
+    </ul>
+    <p>Para dias da semana: var nomeDaVariavel = new Date().getDay(); (valor segue padrão dos arrays - domingo=0, segunda=1, etc.)</p>                 
+    <hr>
+    <!-- Aula 15 -->
+    <h2>Aula 15 - Laço de repetição For</h2>
+    <p>Laço = jeito rápido de executar ação repetidamente</p>
+    <p>for (ponto inicial, condição e o que acontece depois da condição){o que acontece com todos os resultados}</p>
+    <ul>
+        <li>funciona com variáveis externas (EX: cria uma variável "ano" com new Date().getFullYear(); e insere no código pra não precisar ficar mudando o ano no site - se atualiza automático)</li>                    
+    </ul>
+    <hr>
+    <!-- Aula 16 -->
+    <h2>Aula 16 - SetTimeout e SetInterval</h2>
+    <p>Evento de tempo = permite execução do código em intervalos de tempo definidos (intervalos = eventos de cronometragem)</p>
+    <ul>
+        <li>setTimeout (function, tempo em milliseconds) - executa função depois de espera de milissegundos</li>
+        <li>setInterval (function, milliseconds) - igual Timeout, mas repete a função continuamente</li>
+    </ul>
+    <p>Para referência: 1000ms = 1s</p>
+    <p>Muito cuidado na digitação dos códigos, a falta de um ; ou , ou ) faz diferença</p>
+    <p>Para parar contagem: definir var geral (qualquer nome), conectá-la ao setTimeout e criar nova function com clearTimeout(nome da var geral)</p>
+    <p>parseInt = transforma texto em número</p>
+    <p>Contagem regressiva = começa em número maior e reduz ao invés de acrescentar (condicional if=0 para parar a contagem)</p>
+    <hr>
+    <!-- Aula 17 -->
+    <h2>Aula 17 - Classes</h2>
+    <p>Conceito novo no JS ("funções especiais" para fabricação de objetos)</p>
+    <p>constructor() para construir os objetos</p>
+    <p>class nomeDaClasse{constructor(valor1,valor2,valor3){this.propriedade1 = valor1; this.propriedade2 = valor2; this.propriedade3 = valor } </p>
+    <p>Para construir: var nomeDaVar = new nomeDaClasse(novoValor1, novoValor2, novoValor3) = assim ele pode ser invocado com os devidos valores</p>
+    <p>É convenção nomeDeClasse com 1ª letra maiúscula e CamelCase ou underline</p>    
+    <p>Para itens específicos: (nomeDaVar.valor1,2,3,...)</p>
+    <p>Métodos também podem ser aplicados</p>
+    <ul>
+        <li>Para reconhecer qual var executou o método: return this.propriedade + "reconhecimento do método</li>
+    </ul>
+    <p>Para mudar valor de propriedade na var: nomeDaVar.propriedade = novoValor (abaixo do código, senão o que será lido será o valor antigo)</p>
+    <p>A ORDEM NO CÓDIGO SEMPRE IMPORTA (não tem como construir o carro sem ter a fábrica antes) (exceção à regra:functions)</p>
+    <hr>
+    <!-- Aula 18 -->
+    <h2>Aula 18 - Manipulação de Datas</h2>
+    <p>Objeto Date: var nomeDaVar = new Date() - comando Básico</p>
+    <ul>
+        <li>getFullYear() = ano completo (4 dígitos)</li>
+        <li>getMonth() = mês (números de 0 até 11 - 0=janeiro; 1=fevereiro, etc.)</li>
+        <ul>
+            <li>Para deixar escrito = matriz com o nome dos meses e var = matrizDosMeses[data.getMonth()];</li>
+        </ul>
+        <li>getDate() = pegar dia do mês</li>
+        <li>getDay() = pegar dia da SEMANA (de 0 a 6 - esquema de matriz) (mesmo esquema pra ordenar corretamente)</li>
+        <li>getHours() = pegar a hora</li>
+        <li>getMinutes() = pegar minutos</li>
+        <li>getSeconds() = pegar segundos</li>
+        <li>getMilliseconds() = pegar milisegundos</li>
+        <li>toLocaleString('pt-BR') = data no padrão brasileiro (dia/mês/ano)</li>
+        <ul>
+            <li>Caso não queira as horas: ('pt-BR' {dateStyle: 'short'});</li>
+            <li>Caso queira só as horas:('pt-BR' {timeStyle: 'short'}); </li>
+        </ul>
+    </ul>
+    <p>É possível pegar os valores separadamente também para juntá-los em seguida (var dataPadraoBR = diaMes + "/" + mes + "/" + ano) (todos esses valores PRÉ-ESTABELECIDOS COM OS CÓDIGOS ACIMA)</p>
+    <ul>
+        <li>Para consertar os valores, na var do mês, só colocar getMonth() + 1; a falta do zero na data se conserta com uma função externa: addZero(x) {return x < 10 ? '0' + x : '' + x;} e addZero(mes)</li>
+    </ul>
+    <p>Comparar datas:</p>
+    <ul>
+        <li>var hoje = new Date() - hoje</li>
+        <li>var vencimento = new Date (2022, 0, 15) - em ordem ano, mês(matriz) e dia</li>
+        <li>if(hoje > vencimento){mensagem conforme a preferência}else{outra mensagem de preferência}</li>
+    </ul>
+    <p>Diferença entre duas datas
+    <ul>
+        <li>Definir data Inicial e data Final</li>
+        <li>Iniciar var da diferença do tempo = dataFinal.getTime() - dataInicial.getTime();</li>
+        <ul>
+            <li>Arredondar pra dias: var diferença em dias = Math.ceil [arredondar](var de diferença do tempo / (24 * 60 * 60 * 1000)); - conversão de milisegundos em dias</li>
+        </ul>
+    </ul>
+    <hr>
+    <!-- Aula 19 -->
+    <h2>Aula 19 - JSON</h2>
+    <p>JSON = JavaScript Object Notation = notação de objetos</p>
+    <p>Conversão de texto em objeto, e vice-versa</p>
+    <p>Transmissão de dados entre sistemas de forma simples</p>
+    <p>2 métodos</p>
+    <ul>
+        <li>JSON.parse() - converte texto em objeto</li>
+        <li>JSON.stringify() - coverte objetos em texto</li>
+    </ul>
+    <p>new XMLHttpRequest() = fazer requisição de site sem precisar acessar o site (acesso remoto ao site)</p>
+    <p>É possível extrair a informação específica desejada depois de converter (EX: converte um site que tem uma matriz chamada ddd e depois pede a var convertida.ddd</p>
+    <hr>
+    <!-- Extras -->
+    <h2>EXTRAS</h2>
+    <p>Para inserir um código html no js, acrescente acento agudo `aqui no meio vem o código`</p>
+    <ul>
+        <li>Para inserir valor externo dentro deste = ${valor}</li>
+    </ul>
+    <p>Esvaziar caixa após uso = input.value = ""</p>
+    <p>.focus() = volta o foco para o alvo da função</p>
+    <p>addEventListener = Sistema se atenta ao evento listado</p>
+    <p>As teclas no teclado tem uma numeração específica (enter = 13, por exemplo)</p>
+
+</body>
+
+</html>

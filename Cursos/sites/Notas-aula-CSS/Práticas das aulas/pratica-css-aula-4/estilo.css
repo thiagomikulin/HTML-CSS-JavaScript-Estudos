@@ -1,0 +1,21 @@
+body{
+    background:rgb(237, 146, 146)
+}
+
+p{
+    color:red
+}
+
+.Lorem{
+    color:aquamarine;
+}
+
+#fulano{
+    background-color: cyan;
+    color: rgb(25, 11, 184);
+}
+
+h2,h3{
+    background: yellow;
+    text-align: center;
+}

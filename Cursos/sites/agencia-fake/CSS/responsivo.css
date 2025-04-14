@@ -1,0 +1,49 @@
+@media screen and (max-width:1005px) {
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .logo {
+        margin: 0;
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 40px;
+    }
+
+    .header {
+        padding-top: 0;
+    }
+
+    .img-headline {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .headline {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .headline p {
+        text-align: center;
+    }
+
+    .a-caixa{
+        display:inline-block;
+    }
+    .caixas {
+        flex: 100%;
+    }
+
+    .whats {
+        display: none;
+    }
+}

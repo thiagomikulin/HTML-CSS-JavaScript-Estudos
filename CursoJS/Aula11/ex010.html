@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra se foi multado</title>
+    <style>
+        div#flag{
+            font: normal 20px Arial;
+            color:white;
+            margin:10px;
+            width:200px;
+            height:200px;
+            background-color: green;
+            line-height:200px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Descubra se foi multado</h1>
+    <input id="velocidade" type="number" placeholder="Digite sua velocidade">
+    <input id="botao" type="button" value="Verificar">
+    <p>OBS: O limite de velocidade é de 70 Km/h</p>
+    <div id="flag"></div>
+
+    <script>
+        var btn = document.getElementById('botao')
+        btn.addEventListener('click', limiteDeVelocidade)
+
+        function limiteDeVelocidade() {
+            var velocidade = document.getElementById('velocidade')
+            var velocidadeNum = Number(velocidade.value)
+            var flag = document.getElementById('flag')
+            
+
+            if(velocidadeNum > 70){
+                flag.style.backgroundColor = "red"
+                flag.innerHTML = 'Você foi multado'
+                
+            }else{
+                flag.style.backgroundColor = "green"
+                flag.innerHTML = "Você não foi multado"
+            }
+        }
+        
+    </script>
+</body>
+</html>

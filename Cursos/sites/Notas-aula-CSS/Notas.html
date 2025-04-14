@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body style="font-size:18px;">
+    <h2>Aula 1 - O que é CSS e CSS Inline</h2>
+    <p>CSS define estilo, cores, fontes, parte estética da Web</p>
+    <p>CSS = Cascading Style Sheets (folha de estilo em cascata)</p>
+    <img src="imagens/HTML e CSS S2.jpg">
+    <br>
+    <small>Casamento perfeito com html</small>
+    <p>O CSS é responsável pela parte estética (cor de fundo, cor de texto, tamanho da fonte, espaçamentos, etc.)</p>
+    <p>Desenvolvido pelo W3C (World Wide Web Consortium) em 1996, pois o HTML não tinha tags para deixar a página mais
+        visualmente bonita</p>
+    <p>CSS como complemento para o HTML (apesar de ser OUTRA linguagem de marcação)</p>
+    <p>Arquivos .css</p>
+
+    <h3>CSS Inline</h3>
+    <ul>
+        <li>Style dentro de tag específica (como body, h1, etc.) = afeta APENAS elementos dentro dessa tag</li>
+        <ul>
+            <li>"background:cor" = define cor de fundo</li>
+            <li>font-size:valor em px; = modifica tamanho da fonte (GERAL, TUDO AUMENTA OU DIMINUI)</li>
+        </ul>
+    </ul>
+    <!--Link da parte prática-->
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-1.html" target="_blank">Prática da aula</a>
+    <hr>
+    <h2>Aula 2 - CSS Interno (incorporando na página)</h2>
+    <p>Instruções dentro da html</p>
+    <ul>
+        <li>Style = tudo que for passado serão propriedades CSS no documento</li>
+    </ul>
+
+    <p>NO HEAD</p>
+    <ul>
+        <li>body{tudo aqui no meio são propriedades que serão modificadas em TODO o body}</li>
+        <li>h1{todas as propriedades aqui vão afetar APENAS elementos h1} (se essa mesma propriedade for modificada em
+            um elemento específico, o comando direto será lido, não o geral)</li>
+    </ul>
+    <!--Link da parte prática-->
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-2.html" target="_blank">Prática da aula</a>
+    <hr>
+    <h2>Aula 3 - CSS Externo</h2>
+
+    <p>Geralmente, é imprático colocar várias config de CSS em cada arquivo, portanto tem um jeito mais fácil por CSS
+        Externo (um arquivo CSS na página que pode ser vinculado ao arquivo para aplicar suas propriedades)</p>
+    <ol>
+        <li>Criar uma pasta "nome.css"</li>
+        <li>colocar as configs de style desejadas (direto, não precisa colocar style)</li>
+        <li>criar um novo html</li>
+        <li>nesse novo html, no head, colocar link rel="stylesheet" href="pasta de origem do css"</li>
+        <ul>
+            <li>rel = relação (estabelece relação entre arquivos, nesse caso, um html e um css)</li>
+            <li>rel="stylesheet" = determina que o arquivo escolhido será responsável pelo estilo da página</li>
+        </ul>
+    </ol>
+    <p>É interessante criar várias folhas de estilo para cada função (uma pra certos títulos, outra pra cores, outra pra
+        fontes, etc)</p>
+    <p>Hierarquia de prioridade do CSS: Inline > Interno > Externo</p>
+    <p>Pra não bagunçar, use sempre um padrão (recomendado o externo)</p>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-3/pratica-css-aula-3.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 4 - Seletores e Classes</h2>
+    <p>seletor = dizer pro CSS qual elemento você quer trabalhar (especificar p = modifica todos os p) (seletores no CSS
+        podem ser conjuntos EX: h1,p{})</p>
+    <p>Classe = determina um padrão a ser reconhecido pelo CSS (se determinar "x" e colocar propriedades específicas
+        para x, apenas x será modificado) (NO CSS: .nome da classe{propriedades}) (Elementos podem ter mais de uma
+        classe) (nome nunca pode começar com número)</p>
+    <p>Para itens específicos = id (nome único da tag) (no CSS: #nome do id) (nome nunca pode começar com número)</p>
+    <p>Seletor universal: *{}</p>
+    <p>EXISTEM SELETORES MAIS COMPLEXOS</p>
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-4/pratica-css-aula-4.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 5 - Propriedade Color</h2>
+    <p>Computador não entende cor, mas entende código HEX ou RGB (que se traduzem em cor para nós)</p>
+    <p>Código color = seleção de cor, em padrão HEX, RGB ou por nome</p>
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-5/pratica-css-aula-5.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 6 - Propriedade Background</h2>
+    <p>Serve tanto para cor sólida quanto para imagem</p>
+    <ul>
+        <li>Background color = cor de fundo (elemento geral - body - ou específico - h1)</li>
+        <li>Background image = Colocar imagem de fundo da seleção = background-image:url(localização da imagem);</li>
+        <ul>
+            <li>se a imagem for muito grande: background-size: contain (reduz ao tamanho, mas repete padrão se faltar de
+                algum lado) ou cover/100% (tenta adaptar ao tamanho requisitado)</li>
+            <ul>
+                <li>background-repeat:no-repeat; = bloqueia a repetição, mas se for contain, deixa o espaço incompleto
+                </li>
+                <li>background-repeat:repeat-x; (repete no eixo x)OU repeat y; (repete no eixo y)</li>
+                <li>background-position:posição da imagem = determina uma posição para a imagem</li>
+            </ul>
+        </ul>
+    </ul>
+    <p>Se quiser facilitar, dá pra botar tudo isso em uma única tag background no CSS (EX: background: cor url()
+        no-repeat center) (só o size seria externo a essa tag)</p>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-6/pratica-css-aula-6.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 7 - Propriedade Border</h2>
+    <p>Border = contorno de um elemento (borda)</p>
+    <ul>
+        <li>tamanho em px</li>
+        <li>dá pra definir a cor</li>
+        <li>Tipos de borda</li>
+        <ul>
+            <li>solid = barra reta</li>
+            <li>dotted = pontilhada</li>
+            <li>dashed = com traços</li>
+            <li>double = borda dupla</li>
+            <li>Groove = efeito 3D pra dentro</li>
+            <li>ridge = com 3D pra fora</li>
+            <li>inset = afundado de cima</li>
+            <li>outset = afundado de baixo</li>
+            <li>none = nada</li>
+            <li>hidden = escondido</li>
+        </ul>
+        <li>Dá pra mesclar bordar (definindo aspectos para borders top, bottom, left e right)</li>
+        <li>para arredondar bordas = border-radius:quantia em px ou % (diferentes, mas ambos funcionam - px é mais
+            recomendado)</li>
+        <li>não funciona em hr</li>
+    </ul>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-7/pratica-css-aula-7.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 8 - Propriedade Margin</h2>
+    <p>Margin = dá um espaço em branco em uma das direções do elemento (pode ser em px ou %)</p>
+    <p>Todo o código margin pode ir em uma linha só (margin:topo direita embaixo e esquerda; NESSA ORDEM)</p>
+    <p>O código também pode se aplicar a categorias inteiras (se aplicar ao p, todos os parágrafos vão se afastar na
+        quantia determinada)</p>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-8/pratica-css-aula-8.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 9 - Propriedade Padding e Criando um botão simples</h2>
+
+    <p>Bem parecido com margin, MAS em relação à parte de DENTRO do elemento (padding = preenchimento)</p>
+    <p>Forma de preencher é IGUAL ao Margin</p>
+    <p>Colocar apenas um valor do lado do padding = todos os lados expandem nesse valor</p>
+    <p>Para links, o padding equivale como TODO O LINK</p>
+    <p>Para colocar efeito: repete a classe (.botao:hover) (quando o mouse estiver hovering sobre o botão)</p>
+
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-9/pratica-css-aula-9.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 10 - Propriedade Width e Height</h2>
+    <p>Determinar largura e altura pra praticamente qualquer elemento</p>
+    <p>max-width = determina limite de crescimento de largura (se o limite for 1200, em uma página reduzida, ele
+        parecerá maior, mas se expandir acima de 1200, ele para de expandir) (SE ADAPTA À TELA)</p>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-10/pratica-css-aula-10.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 11 - Propriedade Text</h2>
+    <p>Alinhamento, decoração, transformação, espaçamento, etc. </p>
+    <ul>
+        <li>Text-align = alinhamento de texto</li>
+        <ul>
+            <li>center = alinha no centro</li>
+            <li>end = vai pra direita</li>
+            <li>justify = texto justificado</li>
+            <li>left = alinhado à esquerda</li>
+            <li>right = alinhado à direita</li>
+            <li>start</li>
+            <li>inherit</li>
+            <li>initial</li>
+            <li>unset</li>
+        </ul>
+        <li>Direction = direção das letras no texto</li>
+        <ul>
+            <li>ltr = left to right</li>
+            <li>rtl = right to left</li>
+            <li>inherit</li>
+            <li>initial</li>
+            <li>unset</li>
+        </ul>
+        <li>unicode-bidi:bidi-override (só funciona com direction rtl = ler em línguas escritas do avesso) (tem outra
+            alternativa em HTML)</li>
+        <li>text-decoration = decorações do texto</li>
+        <ul>
+            <li>none = retira decorações do texto (como fazemos com links)</li>
+            <li>overline = coloca uma linha acima do texto</li>
+            <li>line-through = atravessa uma linha pelo texto (OBS: essas linhas seguem a cor do texto)</li>
+        </ul>
+        <li>text-transform = modifica o texto (maiúsculas e minúsculas)</li>
+        <ul>
+            <li>UPPERCASE</li>
+            <li>lowercase</li>
+            <li>Capitalize (Geral Para Todas As Palavras)</li>
+        </ul>
+        <li>text-indent = recuo da primeira linha (em px)</li>
+        <li>letter-spacing = distância entre letras (em px) (pode ser negativo para "grudar" letras)</li>
+        <li>line-height = distância entre as linhas (configurada nativa em 1px)</li>
+        <li>word-spacing = distância entre palavras</li>
+    </ul>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-11/pratica-css-aula-11.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 12 - Propriedade Font</h2>
+    <p>Bom uso de fontes destaca letras e deixa site mais bonito</p>
+    <ul>
+        <li>font-family = texto e fonte (tipos de fonte)</li>
+        <li>font-size = tamanho da fonte (em px)</li>
+        <li>font-style = modifica pra itálico ou oblíquo</li>
+        <li>font-weight = grossura da fonte (pode ser por escala de grossura ou pode ser simplesmente "bold" ou "bolder"
+        </li>
+    </ul>
+    <p>CUIDADO! FONTES TEM DIREITOS AUTORAIS</p>
+    <p>Como colocar fonte externa (Google Fonts = fontes livres de direitos autorais)</p>
+    <ol>
+        <li>Escolha uma fonte</li>
+        <li>Clique em "Select this Font/Style</li>
+        <li>Em "Use on the web", selecione @import</li>
+        <li>Copie o código na tag style</li>
+        <li>na aba CSS, colar o código pra importar a fonte</li>
+        <li>ATENÇÃO: o Google lembra das fontes anteriores que você já copiou, e já insere os códigos antigos no
+            requisito de código da nova fonte</li>
+    </ol>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-12/pratica-css-aula-12.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 13 - Estilização de links</h2>
+    <p>Variação no uso de links</p>
+    <ul>
+        <li>Classe referente a link: a.nome da classe{} (só vai funcionar se for um link E se for da classe
+            especificada)</li>
+        <li>Se for colocar alteração (tipo a hover) em um elemento, só precisa deixar o que vai ser alterado de fato
+        </li>
+        <li>cursor = afeta as propriedades do cursor quando estiver na área designada</li>
+    </ul>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-13/pratica-css-aula-13.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 14 - Propriedade Display</h2>
+    <p>Controle de layout (se ou como um elemento será exibido) (já tem um valor padrão de acordo com o tipo de
+        elemento)</p>
+    <p>Tipos de Display</p>
+    <ul>
+        <li>Bloco = começa no início da linha e ocupa todo o espaço da página - padrão em bloco:</li>
+        <ul>
+            <li>div</li>
+            <li>h1 até h6</li>
+            <li>p</li>
+            <li>form</li>
+            <li>header</li>
+            <li>footer</li>
+            <li>section</li>
+            <li>ul/ol e li</li>
+        </ul>
+        <li>Inline = elemento não inicia em nova linha nem ocupa toda a extensão da página, mas se estende na linha
+            conforme a largura necessária - padrão em inline:</li>
+        <ul>
+            <li>a href</li>
+            <li>span = conteiner genérico de conteúdo fraseado</li>
+            <li>img</li>
+        </ul>
+        <li>None = elemento não aparece na página (como os comentários na linha de código) (usado em elementos dinâmicos
+            para desaparecer/aparecer objetos, de acordo com a interação)</li>
+        <li>Inline-block = mistura a união do inline com os parâmetros de height e width do block</li>
+    </ul>
+    <p>Para mudar o display = display:inline/block/etc (quando o display é alterado para inline e tem blocos no meio do
+        caminho do código [enter, por exemplo], esse elemento é convertido em espaço [resolve se colocar os códigos um
+        do lado do outro - COPIA O CÓDIGO EXATO])</p>
+    <p>Inline não reconhece height nem width nem margin (ACEITA PADDING, POR EXEMPLO)(depende do conteúdo do elemento em
+        si) (só display em block entende)</p>
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-14/pratica-css-aula-14.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 15 - Propriedade Max-Width</h2>
+    <p>Definir width a 800px com a aba menor cria barra de rolagem (por ter menos de 800px) (BARRA DE ROLAGEM NÃO É
+        PRÁTICA PARA CELULAR, por exemplo)</p>
+    <p>Max-width = se adapta à tela conforme necessário</p>
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-15/pratica-css-aula-15.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 16 - Propriedade Position</h2>
+
+    <p>Position = posicionamento do elemento em relação a tela</p>
+    <p>5 tipos de position: static, relative, fixed, absolute, sticky</p>
+    <ul>
+        <li>static = posicionamento parado (padrão)</li>
+        <li>relative = posicionamento relativo àonde está o elemento</li>
+        <ul>
+            <li>depois de colocar relative, pode ser inserido um deslocamento para o elemento escolhido (EX: left:20px;
+                = se desloca 20px para a direita, se afastando da esquerda)</li>
+            <li>Nesse caso, do contrário do margin, os elementos se sobrepoem ao invés de serem deslocados juntos</li>
+            <li>z-index = usado para indicar quem está na frente e quem está atrás (quando sobrepostos) (ordem numérica
+                - menores ficam atrás) (CAMADAS DE ELEMENTOS)</li>
+        </ul>
+        <li>fixed = elemento fixo na tela, independente da rolagem (com coordenadas relativas à tela [topo, base,
+            direita e esquerda])</li>
+        <li>absolute = posição do elemento em relação a elemento-pai (divs dentro do container, no exemplo)</li>
+        <ul>
+            <li>Para funcionar, o elemento-pai precisa ter qualquer posicionamento MENOS static (se não, ele usa o body
+                como referência)</li>
+        </ul>
+        <li>sticky = gruda na tela e acompanha a rolagem (depois do ponto inicial)</li>
+        <ul>
+            <li>se estiver em elemento-pai, segue até o limite deste</li>
+        </ul>
+    </ul>
+    <p>O POSITION SEMPRE SEGUE COMO BASE DE DESLOCAMENTO A POSIÇÃO ORIGINAL</p>
+    <p>Usado para efeitos em sites (Cards, por exemplo)</p>
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-16/pratica-css-aula-16.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 17 - Propriedade Overflow</h2>
+    <p>Determina o que acontece com o conteúdo se o elemento for menor que o conteúdo</p>
+    <p>É possível especificar o eixo (x ou y) do overflow</p>
+    <p>Parâmetros</p>
+    <ul>
+        <li>visible = mostra o conteúdo mesmo que saia pra fora (padrão)</li>
+        <li>hidden = mostra só o que está dentro do elemento</li>
+        <li>scroll = cria barra de rolagem interna à div</li>
+        <li>auto = tipo scroll, mas só mostra o scroll se necessário</li>
+    </ul>
+    <p>SÓ FUNCIONA SE ESPECIFICAR ALTURA OU LARGURA (sem isso, não tem necessidade)</p>
+    <p>Funciona também pra página como um todo (coloca no body)</p>
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-17/pratica-css-aula-17.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 18 - Propriedade Float</h2>
+    <p>Faz com que um elemento flutue/saia do fluxo da página para outro lugar(para alinhar, por exemplo)</p>
+    <p>Pode ser esquerda ou direita</p>
+    <p>Elemento flutuante se desprende da div</p>
+    <ul>
+        <li>Para que a div absorva: overflow auto na .div (precisa pegar extensão total mesmo que o elemento esteja
+            flutuando)</li>
+    </ul>
+    <p>Clear = desconsidera a avaliação para seguir o fluxo (pula o espaço do lado do flutuante e continua depois)</p>
+    <ul>
+        <li>both = coloca a borda de cima do elemento estilizado na borda de baixo do elemento flutuante</li>
+    </ul>
+    <p>Float também pode ser usado para botões isolados - menu com itens à esquerda e à direita (dá pra mudar as
+        propriedades individualmente também)</p>
+    <p>SE MARCAR FLOAT LEFT EM ITEM QUE VEM DEPOIS, ELE VIRA O 1º (por estar flutuando "FORA" do texto)</p>
+    <p>Se todos os elementos de um div flutuarem, ele não tem altura e "dá uma bugada"</p>
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-18/pratica-css-aula-18.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 19 - Propriedade Opacity</h2>
+    <p>Transparência</p>
+    <ul>
+        <li>Varia de 0.0 (0% de opacidade - transparente) a 1.0 (100% de opacidade - default)</li>
+        <li>opacity:valor;</li>
+    </ul>
+    <p>Na prática, funciona bem com efeitos interativos</p>
+    <p>Funciona com</p>
+    <ul>
+        <li>Imagens</li>
+        <li>Botões</li>
+    </ul>
+    <p>Não esqueça que colocar opacidade em um elemento torna TUDO dentro desse elemento em opaco</p>
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-19/pratica-css-aula-19.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 20 - Efeito Dropdown</h2>
+    <p>Efeito de passar o mouse por cima de um elemento e abrir mais opções de seleção (subitens)</p>
+    <p>Dropdown:hover sem vírgula dropbtn = passar o mouse pelo dropbtn ativa o dropdown TAMBÉM (funções conjuntas)</p>
+    <p>Dropdown-content = acrescente position absolute</p>
+    <p>posicionamento em bloco enfilera os dropdown-content</p>
+    <p>Coloca display:none no dropdown-content pra ele não ficar aparecendo</p>
+    <p>AQUI QUE A MÁGICA ACONTECE</p>
+    <p>Em seguida, coloque dropdown:hover e dropdown-content SEM VÍRGULA e marque que o display fica em bloco (dessa
+        forma, o sistema entende que, quando o dropdown estiver selecionado, seus conteúdos serão exibidos) (tanto
+        dropdown quanto dropdown-content se mostram em bloco)</p>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-20/pratica-css-aula-20.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 21 - Especificidade CSS</h2>
+    <p>Entre duas tarefas conflitantes em um mesmo elemento, qual o navegador vai executar?</p>
+    <p>Em ordem:</p>
+    <ol>
+        <li>Comandos diretamente na tag</li>
+        <li>Estilo da página (no head, por exemplo)</li>
+        <li>Estilo.css na página externa</li>
+    </ol>
+
+    <p>Em ordem de seletores</p>
+    <ol>
+        <li>ID</li>
+        <li>Classes</li>
+        <li>Seletores simples (h1, p, li, etc.)</li>
+    </ol>
+    <p>A ordem também faz efeito (se colocar na ordem do elemento - EX: h1 .red - ele ganha de uma classe sozinha, mas
+        se for na ordem inversa ele perde [por falta de especificidade])</p>
+    <p>ORDEM DEFINITIVA DE FORÇA</p>
+    <ol>
+        <li>Style inline</li>
+        <li>ID</li>
+        <li>Seletor simples + classe</li>
+        <li>Classe</li>
+        <li>seletor simples</li>
+    </ol>
+    <p>Se for vários comandos com seletores iguais e comandos diferentes, o último sempre terá prioridade</p>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-21/pratica-css-aula-21.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 22 - Regra Important</h2>
+    <p>!important = determina o que realmente é importante na nossa hierarquia (ignora hierarquia do CSS) ("regra para
+        burlar as regras)</p>
+    <p>Bom para medida paleativa, um teste (não é bom usar sempre, senão bagunça)</p>
+    <p>Se 2 tiverem important, segue a ordem de especificidade</p>
+    
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-22/pratica-css-aula-22.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 23 - Efeito Gradiente</h2>
+    <p>Gradiante = troca de uma cor pra outra dentro do mesmo elemento</p>
+    <p>background-image: tipo de gradiente(parâmetros - direção do gradiente e cores)</p>
+    <p>TIPOS DE GRADIENTE</p>
+    <ul>
+        <li>Gradiente linear</li>
+        <ul>
+            <li>Cores seguem a ordem de colocação</li>
+            <ul>
+                <li>Podem também ter porcentagem de aparecer (EX: red 50%)</li>
+            </ul>
+            <li>Direção = to direção (left, right, top, bottom [padrão])</li>
+            <ul>
+                <li>Combinar direções/diagonal = junta as duas direções (canto baixo-direito = to bottom right)</li>
+                <li>funciona com graus também (0deg = top; 90deg = right; 180deg = bottom; 270deg = left)</li>
+            </ul>
+        </ul>
+        <li>Gradiente radial</li>
+        <ul>
+            <li>Padrão de dentro pra fora</li>
+        </ul>
+    </ul>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-23/pratica-css-aula-23.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 24 - Propriedades Text Shadow e Box Shadow</h2>
+    <p>Efeitos de sombra em texto e caixa (divs, por exemplo)</p>
+    <p>box/text-shadow:horizontal vertical desfoque cor</p>
+    <p>Parâmetros</p>
+    <ul>
+        <li>Sombra na horizontal - vertical (nessa ordem) (em px)</li>
+        <li>Desfoque (em px)</li>
+        <li>Cor</li>
+    </ul>
+    <p>Pode aplicar + de uma sombra em um texto (só colocar uma vírgula depois e seguir o processo)</p>
+    <p>Só blur = deixa as sombras zeradas e sobe só blur</p>
+    <p>Box para efeito de caixa:0 4px 8px 0 rgba (0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)</p>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-24/pratica-css-aula-24.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 25 - Efeitos de Texto</h2>
+    <p>Formatação de texto e circunstâncias</p>
+    <p>textos em elementos de tamanho fixo e comportamento dentro do elemento</p>
+    <ul>
+        <li>Se tiver texto demais = white-space:nowrap (força item a ficar todo em uma linha só) (acrescente uma função de hover sobre a caixa + texto reduzido - white-space:normal = aumentar texto quando passa)</li>
+        <ul>
+            <li>height:auto = aumenta a caixa de acordo com o texto (bom para essa função de expansão)</li>
+        </ul>
+        <li>Text-overflow: (O que vai acontecer com o texto de der overflow)</li>
+        <ul>
+            <li>ellipsis = 3 pontinhos no limite (mostra que tem continuação)</li>
+        </ul>
+    </ul>
+    <p>Sintaxe = @media only screen and (max-width:de acordo com aparelhopx){...}</p>
+
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-25/pratica-css-aula-25.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 26 - Media Queries</h2>
+    <p>Redimensionamento para diferentes resoluções de tela (diferentes dispositivos = diferentes resoluções)</p>
+    <p>Nome secundário = layout responsivo</p>
+    <p>Abarcam 5 tamanhos</p>
+    <ul>
+        <li>Smartphones</li>
+        <li>Tablets</li>
+        <li>Tablet deitado (médio)</li>
+        <li>Laptop/desktop (largo)</li>
+        <li>Desktop/TV (super-largo)</li>
+    </ul>
+    <p>Resumidamente, o site se altera conforme os benchmarks de resolução são alcançados</p>
+    <p>Para ver as resoluções em tela</p>
+    <ul>
+        <li>No Chrome = F12</li>
+        <li>No opera = botão direito - inspecionar elemento</li>
+    </ul>
+    <p>Na barra, tem um item no topo à esquerda com um celular e computador. Esse é o botão do teste de resolução</p>
+    <p>Alterações dependem dos testes (dá pra ir testando e alterando as configs pra ver o que fica + responsivo)</p>
+    <ul>Possibilidade de alterações
+        <li>alterar tamanho da fonte</li>
+        <li>mudar cor</li>
+        <li>retirar itens desnecessários dos devices</li>
+        <li>reposicionar itens</li>
+    </ul>
+    <p>É possível também estabelecer uma janela limite (com min-width e max-width - @media screen and (max-width:Xpx) and (min-width:Xpx))</p>
+    <p>Podem afetar também classes</p>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-26/pratica-css-aula-26.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 27 - Flexbox</h2>
+    <p>Conjunto de regras para deixar o site responsivo</p>
+    <p>Propriedade display tipo Flex</p>
+    <p>FRAMEWORK é mais fácil p/ montar site (só HTML/CSS = montar na mão)</p>
+    <p>Se adapta de forma automática</p>
+    <ul>
+        <li>Display:Flex = um item do lado do outro</li>
+        <ul>
+            <li>inline-block e float são antigos em comparação a este</li>
+        </ul>
+        <li>Flex-direction = aponta a direção dos itens (em columns: comportamento em bloco; em rows: comportamento "inline float")</li>
+        <ul>
+            <li>Pode ser combinado com media queries (em tamanhos menores em columns, em maiores em rows)</li>
+            <li>Dá pra indicar também se as rows ou colums são reversas ou não</li>
+        </ul>
+        <li>Flex-wrap = envolve necessariamente todos os itens (mesmo que não apareçam na tela) no container(padrão nowrap)</li>
+        <li>Flex-flow = envolve text-wrap e text-direction</li>
+        <li>Justify-content (padrão = flex-start)</li>
+        <ul>
+            <li>Flex-start = alinha na esquerda (começo) da página</li>
+            <li>Flex-end = alinha na direita (final) da página</li>
+            <li>Center = alinha no centro da página</li>
+            <li>Space-between = espaçamento uniforme entre os elementos</li>
+            <li>Space-around = espaçamento uniforme de toda a volta dos elementos</li>
+        </ul>
+        <li>Align-items = posicionamento vertical dos itens INDIVIDUAIS na página(padrão:stretch)</li>
+        <li>Align-content = AGRUPA os itens e posiciona conforme a preferência (bloco de conteúdos)</li>
+        <li>Flex-grow = inserido na tag filho para crescer os itens de forma automática</li>
+        <ul>
+            <li>1 na especificidade CSS para todas as divs = crecscimento uniforme, mesmo tamanho</li>
+            <li>É possível deixar itens maiores mudando seus valores individualmente</li>
+        </ul>
+        <li>Flex = especificar comportamento de cada tag div filho</li>
+        <ul>
+            <li>É interessante colocar no *{} que o box-sizing será border-box, pois assim incorpora em cada caixa</li>
+        </ul>
+
+
+    </ul>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-27/pratica-css-aula-27.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>Aula 28 - Criando site do zero com CSS e HTML</h2>
+
+    <a class="pratica" href="Práticas das aulas/pratica-css-aula-28/pratica-css-aula-28.html" target="_blank">Prática da
+        aula</a>
+    <hr>
+    <h2>SAAS em 25 min</h2>
+
+    <h1>EXTRAS</h1>
+    <p>ID VS Class</p>
+    <ol>
+        <li>Em IP, usa-se # na css; em Class, usa-se . na css</li>
+        <li>Class é usada para repetir um elemento várias vezes</li>
+        <li>IP, do contrário, só tem 1 de cada tipo
+    </ol>
+    <p>Elemento-pai - elementos maiores que englobam elementos-filho (EX: ul é elemento pai e li é elemento-filho)</p>
+    <p>Facilitar preenchimento div = div.nome da classe (cria a div com a classe pronta)</p>
+    <p>Itens podem ser especificados na seleção css (EX: a imagem dentro de container = .container img)</p>
+    <p>Diagramação = Distribuir elementos gráficos na página de forma coerante e esteticamente bonita</p>
+    <p>Copiar linhas = Shift + Alt + seta pra baixo</p>
+    <p>site com p>Lorem para fotos (placeholder de img) = Lorem Picsum</p>
+    <p>Ordem no código = tipo>classe>inline (por convenção)</p>
+    <p>list=style-type</p>
+    <ul>
+        <li>none = sem estilo na lista ("sem CSS")</li>
+    </ul>
+    <p style="font-size: 30px;">POR QUE OVERFLOW:HIDDEN MOSTRA ELEMENTOS FLUTUANTES?</p>
+    <img src="imagens/Explicação overflow hidden mostrando elementos flutuantes.jpg">
+    <p>Classes podem compartilhar características (EX: p, .classex{})</p>
+    <p>Não se sinta mal de usar o Google, alguns códigos são foda mesmo</p>
+    <p>Os elementos tem inclusos em suas medidas valores de padding, borda e width/height (se um elemento tiver a mesma width de outro, mas tiver padding, ele aparecerá maior); com box-sizing:border-box, ele regula as outras caixas para ficarem com o mesmo tamanho (mesmo que haja padding e bordas maiores)</p>
+</body>
+
+</html>

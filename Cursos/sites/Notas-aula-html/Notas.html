@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo HTML: Aulas Prof. Dimitri</title>
+    <meta name="description" content="A descrição do site aparece quando ele é compartilhado">
+    <meta name="keywords" content="html, texto, descrição, básico, resumo">
+    <meta name="author" content="Thiago Mikulin">
+
+
+</head>
+
+<body>
+    <h1>Resumo HTML</h1>
+    <h2>Aula 1 - Criando novo projeto</h2>
+    <p>HTML = HyerTextMarkupLanguage</p>
+    <ul>
+        <li>Estrutura + básica da web (estrutura e significado do conteúdo)</li>
+        <ul>
+            <li>Textos</li>
+            <li>Imagens</li>
+            <li>Etc.</li>
+        </ul>
+        <li>Formato .htm ou .html</li>
+        <li>" HyperText" por causa dos links que conectam páginas (de um documento/página para outro)</li>
+        <li>"MarkupLanguage" por trabalhar com tags/rótulos (como essas que você vê no VS Code)</li>
+        <li>140 tags html (indicam para o navegador o tipo de conteúdo que deve mostrar)</li>
+    </ul>
+    <p>Criar pastas de projetos no disco (C:) evita que outras pessoas mexam (só no seu perfil)</p>
+    <p>Não use espaço nas pastas (MeuPrimeiroSite; meu-primeiro-site; meu_primeiro_site)</p>
+    <h3> Começando o arquivo</h3>
+    <ul>
+        <li>Selecionar pasta para inserir arquivo (Ctrl+K, Ctrl+O ou File→Open Folder) (A pasta também pode ser
+            arrastada dos arquivos do PC para o VSCode)</li>
+        <li>Explorer (Ctrl+B fecha; Ctrl+Shift+E abre)</li>
+        <li>New Folder → nomeia “index.html” (index de índice)</li>
+        <li>Fechar: File → Close Folder</li>
+        <li>Depois de criado, dá pra abrir no prompt de comando (cmd)</li>
+        <ul>
+            <li>Clica no caminho para o arquivo e dá Ctrl + C</li>
+            <li>Digita “cd + copiado do arquivo e dá enter</li>
+            <li>Depois digita "code ."</li>
+        </ul>
+    </ul>
+    <hr>
+    <h2>Aula 2 - Estrutura Básica</h2>
+    <p>Primeiros comandos</p>
+    <ul>
+        <li>!doctype html = diz pro navegador que o arquivo é html</li>
+        <li>entre html e /html = todo o html</li>
+        <li>head = tudo que será lido apenas pelo computador</li>
+        <li>body = conteúdo que vai aparecer para os usuários</li>
+        <li>h1/title = título 1</li>
+        <li>p = parágrafo</li>
+    </ul>
+    <p>Crtl + S ou File → Save = salvar alterações (SEMPRE SALVE!) </p>
+    <p>Abrir no Live Server: Canto inferior direito em “Go Live” ou botão direito e “Open with Live Server</p>
+    <p>Posicionar telas de lado = Windows + seta</p>
+    <p>digitar “html:5” gera um formato pronto</p>
+    <hr>
+    <h2>Aula 3 - Meta Tags, Cabeçalho e Parágrafo</h2>
+    <p>Meta tags: localizadas no head; metadados lidos pelos navegadores</p>
+    <ul>
+        <li>palavras-chave do site</li>
+        <li>Autor</li>
+        <li>Codificação dos caracteres</li>
+        <li>Visualização de dispositivo</li>
+    </ul>
+    <p>"html Lang="Língua" = definição do idioma</p>
+    <ul>
+        <li>en = inglês</li>
+        <li>pt-br = Português</li>
+    </ul>
+    <p>Metas</p>
+    <ul>
+        <li>meta charset="UTF-8" = padrão de caracteres para usar no site (diz que nosso doc vai ter sistema de
+            caracteres compatível com a língua portuguesa)</li>
+        <li>meta http-equiv="X-UA-Compatible" content="IE=EDGE"</li>
+        <li>meta name="viewport" content="width=device-width, initial-scale=1.0" = viewport é a área visível do usuário
+            (tela se adapta ao dispositivo) (modelo de site de computador no celular é pela falta dessa meta tag)</li>
+        <li>meta name="description" content="descrição do site" = descrição do site (pequena sinopse do site ao
+            compartilhar) (não faz sentido ser muito grande - uma a duas frases)</li>
+        <li>meta name="keywords" content="palavra 1, palavra 2" = palavras-chave para busca por outros sites (como o
+            Google) (não é mais tão importante - o Google já lê por si)</li>
+        <li>meta name="author content="nome do autor" = define o autor</li>
+    </ul>
+    <p>Cabeçalho</p>
+    <ul>
+        <li>h = heading - título (do 1 ao 6 depois do h) (NUNCA USE TÍTULO POR CAUSA DO TAMANHO DA LETRA - existem
+            outras tags) (nunca se usa mais de 1 h1 no site - confunde SEO - Search Engine Optimization [optimização de
+            motores de busca], mas se for em seções separadas [divisão de articles, por exemplo, aí pode)</li>
+        <li>p = parágrafo (p> Lorem gera texto padrão aleatório para preenchimento) (independe de espaços e sempre vai
+            considerar apenas 1 espaço) (p*3 gera 3 tags p) (p*3>Lorem divide Lorem e 3 parágrafos)
+        </li>
+    </ul>
+    <hr>
+    <h2>Aula 4 - Formatação de Texto</h2>
+    <ul>
+        <li>b = negrito (tudo no meio fica em negrito)</li>
+        <li>strong = mesma coisa do b, mas significado diferente pro navegador</li>
+        <li>hr = separa itens com linha</li>
+        <li>br = line break (quebra de linha) (marcações em CSS são melhores para dividir partes)</li>
+        <li>i = itálico</li>
+        <li>u = sublinhado</li>
+        <li>small = deixa o texto menor (CSS também funciona)</li>
+        <li>del = riscado (strike também pode ser usado, mas está em desuso)</li>
+        <li>sup/sub = eleva/abaixa o elemento selecionado</li>
+        <li>mark = marca o texto (melhor no CSS)</li>
+    </ul>
+    <p>EX:</p>
+    <b>negrito</b>
+    <br>
+    <strong>forte</strong>
+    <br>hr tem entre as aulas
+    <br><br>
+    br entre essa linha e a anterior
+    <br>
+    <i>itálico</i>
+    <br>
+    <u>sublinhado</u>
+    <br>
+    <small>pequeno</small>
+    <br>
+    <del>riscado</del>
+    <br>
+    10<sup>sup</sup> e 10<sub>sub</sub>
+    <br>
+    <mark>marcado</mark>
+
+    <p>Quanto mais você evidencia intenção pro navegador, melhores resultados ele pode oferecer</p>
+    <hr>
+    <h2>Aula 5 - Elementos de Citação</h2>
+    <ul>
+        <li>[abbr title="nome completo da abreviação"]Sigla[/abbr] = insere a tradução da abreviação quando o mouse
+            passa por cima do leitor</li>
+        <ul>
+            <li>Ex: Você conhece o inicio de um site com <abbr title="World Wide Web">WWW</abbr></li>
+        </ul>
+        <li>address = Formato específico para endereço (físico, URL, e-mail, telefone, mídia social, etc.)</li>
+        <li>cite = Título de obra</li>
+        <li>q = citação</li>
+        <li>blockquote = destaque afastado da margem esquerda</li>
+        <li>bdo dir="ltr (left to right)/rtl (right to left) = muda direção do texto (de trás pra frente) (se inserir p,
+            ele mantém a estrutura e se ALINHA ao lado direito) (usado para línguas lidas de trás pra frente)</li>
+    </ul>
+    <p>EX: </p>
+    <abbr title="Alcoólicos Anônimos">AA - sigla</abbr>
+    <br>
+    <adress>Rua Treze de Maio, 629, São Francisco - endereço</adress>
+    <br>
+    <cite>Dracula - título de obra</cite>
+    <br>
+    <q>A vida é vivida - citação</q>
+    <blockquote>E o texto saiu da margem - blockquote</blockquote>
+    <bdo dir="rtl">Espelhado</bdo>
+
+    <hr>
+    <h2>Aula 6 - Comentários</h2>
+    <ul>
+        <li>{!----} ou Ctrl+K+C (+difícil) = comentário (visto apenas a partir dos aplicativos) (bom para se achar e se
+            lembrar)(serve também para ocultar partes do texto que você não queira mostrar ainda)</li>
+    </ul>
+    <hr>
+    <h2>Aula 7 - Links</h2>
+    <p>{a href="link do site"} Texto que clicando levará ao site {/a} = inserir link para um site de sua escolha</p>
+    <ul>
+        <li>Se quiser abrir em nova aba, inserir após as aspas do link: target="_blank"</li>
+        <li>Link absoluto - link completo externo ao site (ex: Google)</li>
+        <li>Link relativo = link dentro das pastas de criação do seu site (varia de acordo com posição no projeto) (Ex:
+            aba "sobre nós")</li>
+        <li>pegar link dentro de pasta = a href="pasta/arquivo.extensão"</li>
+        <li>Voltar para pasta anterior = a href="../arquivo.extensão" (funciona pro quanto de ../ que você coloca)</li>
+    </ul>
+    <p>EX:</p>
+    <p>LINKS ABSOLUTOS</p>
+    <a href="https://youtube.com" target="_blank">Youtube - aba nova</a>
+    <br>
+    <a href="https://google.com" target="_self">Google - mesma aba</a>
+    <br>
+    <p>LINKS RELATIVOS</p>
+    <a href="Exemplo de pasta/link relativo.html">Exemplo de link relativo</a>
+    <hr>
+    <h2>Aula 8 - Imagens</h2>
+    <ul>
+        <li>img src="fonte da imagem"</li>
+        <li>ESSA TAG NÃO TEM FECHAMENTO /img</li>
+        <ul>
+            <li>tamanho: após aspas - width="largura" height="altura" (deixar só um ou outro regula a imagem de acordo
+                com as dimensões gerais)</li>
+            <li>alt: define descrição da imagem (para sintetizador de voz e indexação/reconhecimento da descrição da
+                imagem pelo Google, por exemplo)</li>
+        </ul>
+        <li>É fundamental colocar a extensão depois</li>
+        <li>Resolução também afeta no peso geral do arquivo e no carregamento do site (compressor de imagem ajuda com
+            isso [pode usar mais de 1]) (Resize também ajuda)</li>
+        <li>Só png é transparente (jpg estraga layout)</li>
+        <li>Ícones podem ser adquiridos em sites como o "Flaticon"</li>
+        <li>Image map = permite inserir links dentro da imagem (a partir de coordenadas que os sites montam) (mudar
+            resolução depois de mapeada bagunça as coordenadas)</li>
+    </ul>
+    <p>EX:</p>
+    <img src="https://www.reliza.com.br/wp-content/uploads/2017/06/mesa-trabalho-organizacao-limpeza-computador-notebook.jpg"
+        width="500">
+    <br>
+    <small>Essa imagem foi pega da internet por um link externo</small>
+    <br><br>
+    <img src="img/buraco-negro.png" width="300">
+    <br>
+    <small>Essa imagem foi retirada de um site externo em PNG, baixada no computador e inserida por link
+        relativo</small>
+    <br>
+
+    <img src="img/computador redimensionado.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="_blank" alt="Google" title="Google" href="https://google.com" coords="29,159,88,242" shape="rect">
+        <area target="_blank" alt="Link relativo" title="Link relativo" href="Exemplo de pasta/link relativo.html"
+            coords="222,84,21" shape="circle">
+    </map>
+    <br>
+    <small>Este é um exemplo de imagem mapeada com links absolutos e relativos</small>
+    <hr>
+    <h2>Aula 9 - Tabelas</h2>
+    <ul>
+        <li>table = começar tabela (pode inserir width e height) (bordas: border="grossura da borda") (alinhar nomes no
+            centro: style="text-align: center;")</li>
+        <li>tr (table row) = linha (repete pra cada nova linha na tabela)</li>
+        <li>th (table heading) = coluna (só no 1º tr)</li>
+        <li>td (table data) = dados da coluna</li>
+    </ul>
+    <p>EX:</p>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Aniversário</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Thiago</td>
+            <td>28/03</td>
+            <td>Balneário Camboriú</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Aula 10 - Listas</h2>
+    <ul>
+        <li>ul = unordered list (lista não-ordenada)</li>
+        <li>li = list item (item da lista)</li>
+        <ul>ol = ordered list (lista ordenada) (numera de forma sequencial)</ul>
+    </ul>
+    <hr>
+    <h2>Aula 11 - Iframes</h2>
+    <p>Html dentro de Html (rodando dentro da página)</p>
+    <ul>
+        <li>iframe src="localização do html"</li>
+        <li>Pode colocar width, height e title</li>
+        <li>Tirar borda = style="border:none;"</li>
+        <li>Pode ser incorporado no a href</li>
+        <ol>
+            <li>inserir iframe e colocar name="nome do iframe"</li>
+            <li>no a href, inserir target="nome do iframe"</li>
+    </ul>
+    </ul>
+    <p>Pelo Youtube, dá pra clicar em "Compartilhar" embaixo do vídeo e, em seguida "Incorporar" para conseguir o código
+        iframe do vídeo</p>
+    <p>Recurso não é muito mais utilizado, mas é bom saber</p>
+    <p>EX: </p>
+    <iframe src="Exemplo de pasta/link relativo.html" name="link relativo"></iframe>
+    <hr>
+    <h2>Aula 12 - Formulários</h2>
+    <p></p>Dados de entrada (login, cadastro, escolher item, upload de imagem, etc.)
+    <ul>
+        <li>form = inicia o Formulário
+            <ul>
+                <li>direcionar para pasta: form action="arquivo-alvo(geralmente php)" method="get ou post"</li>
+            </ul>
+        </li>
+        <li>label="" = Mini legenda antes da caixa do texto que indica sua finalidade (EX: Nome:)</li>
+        <ul>
+            <li>se inserir id="nome do id" e colocar label for="nome do id", ao clicar no label, ele ativa a caixa de
+                texto</li>
+        </ul>
+    </ul>
+    <h3>tipos de input (e suas funções)</h3>
+    <li>input = colocar dado (não tem fechamento)</li>
+    <ul>
+        <li>type ="text" = digitação de texto</li>
+        <li>type="password" = senha (só o site lê o que tem por trás das bolinhas)</li>
+        <li>type="email" = email (identifica com @ e .)</li>
+        <ul>
+            <li>Para todos os types acima: placeholder="" = o que estará na caixa de texto até alguém escrever algo
+                (como "Digite seu nome
+                aqui")</li>
+        </ul>
+        <li>type="radio" = seleção de só 1 item de várias opções</li>
+        <li>type="checkbox" = multipla escolha (+ de 1) (também usado para concordar com temas)</li>
+        <ul>
+            <li>name = se for o mesmo em todos, só pode selecionar 1 (como se fosse o pai dizendo pra escolher só um
+                bicho de estimação); se for diferente, considera múltiplas alternativas válidas (checkbox = apenas
+                name="item 2", por exemplo)</li>
+            <li>value = valor enviado de acordo com a seleção (diferente para cada item) (SEMPRE ELE, NÃO O NOME DE
+                BONITO)</li>
+            <li>required = requisição de preenchimento obrigatório antes de enviar (sempre na input)</li>
+            <li>id = nomeia um código ID para ser reconhecido pelo label (label for="ID")Nome do label</li>
+        </ul>
+        <li>type="submit" = Enviar o formulário em pasta determinada</li>
+    </ul>
+    <br>
+    <p>Select = inicia código select (barrinha pra escolher múltiplas alternativas)</p>
+    <ul>
+        <li>Dentro da barra, códigos option value="opção a ser selecionada</li>
+    </ul>
+
+    <p>Textarea = área de texto</p>
+    <ul>
+        <li>rows="número de linhas" = determina quantia de linhas para o texto</li>
+        <li>cols="número de colunas" = determina quantia de colunas do texto</li>
+        <li>placeholder e name também podem ser usado</li>
+    </ul>
+
+    <p>button = coloca botão aleatório (que, se inserido no formulário, submete, mas não precisa estar necessariamente
+        no form)</p>
+    <p>EX:</p>
+
+    <h1>Formulário</h1>
+
+
+    <form>
+        <!--LABEL NOME-->
+        <label for="campo_nome">Nome:</label>
+
+        <!--INPUT NOME-->
+        <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required>
+
+        <br><br>
+
+        <!--LABEL E-MAIL-->
+        <label for="campo_email">E-mail:</label>
+
+        <!--INPUT E-MAIL-->
+        <input id="campo_email" type="email" placeholder="Digite seu email" required>
+
+        <br><br>
+
+        <!--LABEL SENHA-->
+        <label for="campo_senha">Senha:</label>
+
+        <!--INPUT SENHA-->
+        <input id="campo_senha" type="password" placeholder="Digite sua senha" required>
+
+        <br><br>
+        <h2>Animal de estimação</h2>
+
+        <!--Input Radio Cachorro-->
+        <input type="radio" id="cachorro" name="animal" value="Cachorro" <!--label-Cachorro-->
+        <label for="cachorro">Cachorro</label>
+
+        <br><br>
+        <!--input gato-->
+        <input type="radio" id="gato" name="animal" value="Gato" <!--label-gato-->
+        <label for="gato">Gato</label>
+
+        <br><br>
+        <!--input tartaruga-->
+        <input type="radio" id="turtle" name="animal" value="tartaruga" <!--label-tartaruga-->
+        <label for="turtle">Tartaruga</label>
+
+        <br>
+
+        <h2>O que você tem em casa?</h2>
+        <!--CHECKBOX TV-->
+        <input type="checkbox" id="TV" name="item 1">
+        <label for="TV">TV</label>
+        <br><br>
+        <!--CHECKBOX GELADEIRA-->
+        <input type="checkbox" id="Geladeira" name="item 2">
+        <label for="Geladeira">Geladeira</label>
+        <br><br>
+        <!--LABEL SELECT-->
+        <label for="programação">
+            <h3>Linguagem da programação</h3>
+        </label>
+        <!--SELECT-->
+        <select name="linguagens da programação" id="programação">
+            <option selected disabled value="">Selecione uma linguagem</option>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+        </select>
+        <br><br>
+
+        <h2>Digite sua mensagem</h2>
+        <!--TEXTAREA-->
+        <textarea name="mensagem" placeholder="digite sua mensagem aqui" rows="15" cols="55"></textarea>
+        <br><br>
+        <!--SUBMIT-->
+        <input type="submit" value="Envia essa bagaça">
+    </form>
+    <br>
+    <button>Botão sem função (fora do form)</button>
+
+    <hr>
+    <h2>Aula 13 - Áudio</h2>
+    <p> enbsp ponto e vírgula = espaço no html</p>
+    <p>EX:</p>
+    Este texto é o Começando
+    &nbsp;
+    E este texto vem depois
+
+    <p>Audio = insere áudio no html</p>
+    <li>controls = insere controle do áudio (só assim aparece na página)</li>
+    <li>para retirar opção de download = controlslist="nodownload"</li>
+    <ul>
+        <li>source src="fonte do áudio" = tag filho para determinar local do áudio (funciona com fonte absoluta [até
+            rádio], desde que seja mp3)</li>
+        <li>type="audio/formato" = determina tipo do arquivo de áudio</li>
+        <ul>
+            <li>para mp3 = mpeg</li>
+            <li>para ogg = ogg</li>
+            <li>para wav = wav</li>
+        </ul>
+        <li></li>
+    </ul>
+    <p>EX:</p>
+
+    <a href="Exemplo de pasta/audio.html" target="_blank">HTML com áudio</a>
+    <hr>
+
+    <h2>Aula 14 - Vídeo</h2>
+    <p>vídeo = começa tag vídeo</p>
+    <li>poster="" = define imagem de thumbnail</li>
+    <li>width="" = define a largura na página</li>
+    <li>controls = define o controle do vídeo</li>
+    <li>autoplay = o vídeo começa assim que o usuário entra na página</li>
+    <li>disablepictureinpicture = desabilita picture-in-picture</li>
+    <li>controlslist="nodownload" = impede download do vídeo</li>
+    <li>controlslist="nofullscreen" = impede o fullscreen</li>
+        <ul>
+            <li>source src="" = tag filho que nem no áudio</li>
+            <li>type="video/formato" = igual no áudio</li>
+        </ul>
+    <p>PARA VÍDEO DO YOUTUBE, SÓ IFRAME</p>
+    <p>EX:</p>
+    <br>
+    <a href="Exemplo de pasta/vídeo.html" target="_blank">Vídeo</a>
+    <hr>
+    <h2>Aula 15 - Div e HTML Semântico</h2>
+
+<p>Para estilizar a página, alguns conceitos de CSS são necessários, portanto deve se inserir um style no head do html</p>
+<ul>NO HEAD
+    <li>*{} = configurações gerais</li>
+    <ul>
+        <li>box-sizing: border-box; = especifica propriedades height e width</li>
+    </ul>
+    <li>body{} = alterações no corpo geral do html</li>
+    <ul>
+        <li>margin:valor da margem; = define valor da margem em pixels (px)</li>
+    </ul>
+    <li>.nome da classe{} = define especificidades da classe definida (pode ser colocada uma tag depois do nome da classe em outra seleção para ditar o comportamento específico dessa tag)</li>
+    <ul>
+        <li>background-color:cor; = define cor de fundo (ele lê código de cor - #3333)</li>
+        <li>padding:quantia de pixels; =  distância entre elemento e borda (padding = preenchimento)</li>
+        <li>text-align:posição desejada; = define a posição do texto</li>
+        <li>color:cor do elemento; = define a cor do elemento</li>
+        <li>float = alinhamento com lado esquerdo(?)</li>
+        <li>display = organiza os elementos</li>
+        <li>text-decoration = ações sobre decorações no texto</li>
+        <li>width:largura (pode ser em porcentagem); = define quanto espaço a classe vai ocupar</li>
+    </ul>
+</ul>
+
+NO BODY
+<p>div = divisória (segmentação genérica da página em partes específicas [blocos] - menu, topo e conteúdos, por exemplo) (não serve pra nada sem os atributos - sem significado para o navegador, nós formamos o significado e falamos o que o navegador deve fazer)</p>
+
+    <ul>
+        <li>class="nomear a classe" = as propriedades dessa classe serão definidas no style (style .topo{ } /style)</li>
+    </ul>
+
+<p>Navegador não entende div (não tem significado real pra ele)</p>
+<p>HTML semântico = tag que expressa significado (header ao invés de simplesmente div no topo)</p>
+<ul>
+    <li>header = topo (começo da página)</li>
+    <li>nav = menu de navegação da página</li>
+    <li>section = seção do site</li>
+    <li>footer = rodapé da página</li>
+    <li>article = artigo</li>
+</ul>
+<p>EX:</p>
+<a href="Exemplo de pasta/semantico.html">Semântico e DIV</a>
+
+<hr>
+<h2>EXTRAS</h2>
+
+<ul>
+    <li>Não dá pra colocar comentário no head</li>
+</ul>
+</body>
+
+</html>

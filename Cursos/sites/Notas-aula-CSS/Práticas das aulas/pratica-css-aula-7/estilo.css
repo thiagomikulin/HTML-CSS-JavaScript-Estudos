@@ -1,0 +1,74 @@
+h1{
+    border:1px solid black
+
+}
+
+body{
+    background-color: rgb(233, 231, 231);
+}
+
+.normal{
+    border:3px solid;
+    font-size: 22px;
+    
+}
+
+.pontilhado{
+    border:5px dotted;
+    font-size: 22px;
+}
+
+.com_tracos{
+    border:5px dashed;
+    font-size: 22px;
+}
+
+.dupla{
+    border:10px double;
+    font-size: 22px;
+}
+
+.groove{
+    border:15px groove;
+    font-size: 22px;
+}
+
+.ridge{
+    border:15px ridge;
+    font-size: 22px;
+}
+
+.inset{
+    border:15px inset;
+    font-size: 22px;
+}
+
+.outset{
+    border:15px outset;
+    font-size: 22px;
+}
+
+.none{
+    border:15px none;
+    font-size: 22px;
+}
+
+.hidden{
+    border:15px hidden;
+    font-size: 22px;
+}
+
+.diferente{
+    border-top:5px dotted red;
+    border-left:5px solid green;
+    border-bottom: 5px dashed blue;
+    border-right: 5px solid yellow;
+    font-size:22px;
+}
+
+.arredondado{
+    border:3px solid;
+    font-size:22px;
+    border-radius: 30px;
+    text-align:center;
+}

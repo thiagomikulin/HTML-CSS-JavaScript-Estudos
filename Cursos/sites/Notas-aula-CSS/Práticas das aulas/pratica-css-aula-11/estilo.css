@@ -1,0 +1,22 @@
+p{
+    font-size:  20px;
+    margin:30px;
+    background:blue;
+    color:white;
+
+}
+
+h2{
+    background: green;
+    margin-right: 80%;
+}
+
+.bidi{
+    direction:rtl;
+    unicode-bidi:bidi-override
+}
+
+.text-deco{
+    background: white;
+    color:black
+}

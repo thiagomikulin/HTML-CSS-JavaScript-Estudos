@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+
+/*Corpo do texto*/
+body{
+    margin:0;
+    padding:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #393939;
+    height:100%;
+    width:100%;
+    
+}
+
+/*Título*/
+.titulo{
+    display:block;
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*Geral da caixa de tarefa*/
+.tarefa{
+    display:flex;
+    flex-flow: row wrap;
+    margin-left:5%;
+    margin-right:5%;
+    
+}
+
+/*Input da tarefa*/
+.tarefa input{
+    padding:40px;
+    width:80%;
+    font-size:22px;
+    padding-left: 10%;
+}
+
+/*botão da tarefa*/
+.tarefa button{
+    width:20%;
+    padding:40px;
+    font-size:22px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:#018002 ;
+    color:white;
+    cursor:pointer;
+    font-weight: bold;
+    border: none;
+}
+
+
+
+
+/*Seção dos novos itens*/
+main{
+    display:flex;
+    flex-flow: row wrap;
+    width:90%;
+    margin:auto auto;
+    /* border:1px solid red; */
+    padding-top:40px;
+
+}
+
+/*Características do novo item*/
+.item{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items:center;
+    background-color: #2B2A33;
+    height:80px;
+    width:100%;
+    box-shadow:0 0 20px #ccc;
+    margin-bottom:2%;
+}
+
+
+/*Ícone do item SEM*/
+.item-icone{
+    flex:20%;
+    /* border:1px solid orangered; */
+    text-align: center;
+    cursor:pointer;
+}
+
+/*Imagem do ícone SEM*/
+.item-icone img{
+    width:20%
+}
+
+/*Nome do ícone SEM*/
+.item-nome{
+    flex:55%;
+    /* border:1px solid deeppink; */
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    cursor: pointer;
+    
+}
+
+/*Botão dos ícones*/
+.item-botao{
+    flex:25%;
+    /* border:1px solid green; */
+    
+}
+
+/*Container delete*/
+.delete{
+    background-color: red;
+    display:flex;
+    color:white;
+    border:none;
+    height:80px;
+    width:100%;
+    cursor:pointer;
+    align-content: center;
+}
+
+/*Imagem no delete*/
+.delete img{
+    width:25%;
+    margin-left:25%;
+}
+
+.delete p{
+    width:25%;
+    margin-top:30px;
+}
+
+.item-icone-check{
+    flex:20%;
+    /*border:1px solid orangered; */
+    text-align: center;
+    cursor:pointer;
+}
+
+/*Imagem COM CHECK*/
+.check{
+    
+    width:20%;
+    
+}
+
+
+.txtclicado{
+    text-decoration: line-through;
+    color:black;
+    flex:55%;
+    /* border:1px solid deeppink; */
+    font-size:20px;
+    font-weight:bold;
+    cursor: pointer;
+    
+}
+
+/**/
+.item-clicado{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items:center;
+    background-color: green;
+    height:80px;
+    width:100%;
+    box-shadow:0 0 20px #ccc;
+    margin-bottom:2%;
+}
+
+.delete-clicado{
+    flex:25%;
+}

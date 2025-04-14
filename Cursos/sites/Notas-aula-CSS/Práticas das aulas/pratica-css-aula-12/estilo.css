@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.size {
+    Font-size: 20px
+}
+
+.externa {
+    font-family: 'Honk', system-ui;
+    font-size: 26px;
+}
+
+.estilo {
+    font-style: oblique
+}
+
+.peso {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}

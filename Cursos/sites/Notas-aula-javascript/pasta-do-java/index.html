@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .start{
+            background-color: green;
+            padding:50px;
+            font-size:22px;
+            cursor:pointer;
+            color: white;
+        }
+
+        .stop{
+            background-color:crimson;
+            padding:50px;
+            font-size:22px;
+            cursor:pointer;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Aprendendo JavaScript</h1>
+
+    <p id="mensagem"></p>
+
+    <input type="text" style="padding: 50px;"placeholder="Digite seu texto aqui" id="texto">
+    <button onclick="Verificacao()">Verificar</button>
+    <br><br>
+    <input type="text" style="padding: 50px;"placeholder="Digite uma cor" id="cor">
+    <button onclick="verificaCor()">Verificar</button>
+
+    <p id="100"></p>
+
+    
+
+    
+
+    <h2>Função setTimeout</h2>
+    <h2 id="tempo">0</h2>
+    <button onclick="ativarContagem()" class="start">Ativar contagem</button>
+    <button onclick="pararContagem()" class="stop">Parar contagem</button>
+
+    <h2>Função setInterval</h2>
+    <h2 id="tempo1">0</h2>
+    <button onclick="ativarContagem1()" class="start">Ativar contagem</button>
+    <button onclick="pararContagem1()" class="stop">Parar contagem</button>
+    <br><br>
+    <input id="cep" type="text" placeholder="Digite seu CEP aqui">
+    <button onclick="buscarCEP()">Buscar</button>
+    <p id="texto1"></p>
+
+<script src="../pasta-do-java/js/script.js"></script>
+</body>
+
+</html>

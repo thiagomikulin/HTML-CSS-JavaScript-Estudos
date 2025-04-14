@@ -1,0 +1,26 @@
+h1{
+    margin-top:50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border:solid 3px;
+    border-radius:30px;
+    background-color:black;
+    color:rgb(255, 255, 255);
+    text-align: center;
+
+    padding:50px 70px 20px 10px;
+}
+
+.botao{
+    margin-left:33%;
+    background:green;
+    color:white;
+    padding:30px;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+.botao:hover{
+    background:yellow
+}
